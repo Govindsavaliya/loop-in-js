@@ -1066,4 +1066,380 @@
 // }
 
 
+// const n = 4;
+// let z = 1;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = n-1; j >= i; j--){
+//         row += " "
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += i
+//     }
+//     z += 2;
+//     console.log(row)
+// //    1
+// //   222
+// //  33333
+// // 4444444
+// }
+
+// const n = 4;
+// let z = 1;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = n-1; j >= i; j--){
+//         row += " "
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += k
+//     }
+//     z += 2;
+// console.log(row)
+// //    1
+// //   123
+// //  12345
+// // 1234567
+// }
+
+// const n = 4;
+// let z = 1;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = n-1; j >= i; j--){
+//         row += " "
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += z
+//     }
+//     z += 2;
+//     console.log(row)
+// //    1
+// //   333
+// //  55555
+// // 7777777
+// }
+
+// const n = 4;
+// let z = 1;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = n-1; j >= i; j--){
+//         row += " "
+//     }
+//     for(let k = z; k >= 1; k--){
+//         row += k
+//     }
+//     z += 2;
+//     console.log(row)
+// //    1
+// //   321
+// //  54321
+// // 7654321
+// }
+
+
+// const n = 4; // Number of rows
+
+// for (let i = 0; i < n; i++) {
+//   let row = "";
+
+//   // Add spaces for alignment
+//   for (let j = 0; j < n - i - 1; j++) {
+//     row += " ";
+//   }
+
+//   // Add descending numbers
+//   for (let j = i; j >= 0; j--) {
+//     row += j;
+//   }
+
+//   // Add ascending numbers
+//   for (let k = 1; k <= i; k++) {
+//     row += k;
+//   }
+
+//   console.log(row);
+// //    0
+// //   101
+// //  21012
+// // 3210123
+// }
+
+// const n = 4; // Number of rows
+
+// for (let i = 1; i <= n; i++) {
+//   let row = "";
+
+//   for (let j = n - i; j > 0; j--) {
+//     row += " ";
+//   }
+
+//   for (let k = 1; k <= i; k++) {
+//     row += k;
+//   }
+
+//   for (let d = i - 1; d >= 1; d--) {
+//     row += d;
+//   }
+
+//   console.log(row);
+// //    1
+// //   121
+// //  12321
+// // 1234321
+// }
+
+// Second way
+
+// const n = 4;
+// let z = 1;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = n; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = i - 1; k >= -(i - 1); k--){
+//         row += i - Math.abs(k)
+//     }
+//     console.log(row)
+// //     1
+// //    121
+// //   12321
+// //  1234321
+// }
+
+// const n = 4;
+// let z = 1;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += String.fromCharCode(64+i)
+//     }
+//     z += 2;
+//     console.log(row)
+// //    A
+// //   BBB
+// //  CCCCC
+// // DDDDDDD
+// }
+
+// const n = 4;
+// let z = 1;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += String.fromCharCode(64+k)
+//     }
+//     z += 2;
+//     console.log(row)
+// //    A
+// //   ABC
+// //  ABCDE
+// // ABCDEFG
+// }
+
+
+
+// const n = 4;
+// let px = n;
+// let py = n;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = 1; j < n * 2; j++){
+//         if(j >= px && j <= py){
+//             row += "*";
+//         }else{
+//             row += " ";
+//         }
+//     }
+//     px--;
+//     py++;
+//     console.log(row)
+// //    *
+// //   ***
+// //  *****
+// // *******
+// }
+
+// const n = 4;
+// let px = 1;
+// let py = n*2-1;
+
+// for(let i = 1; i <= n; i++){
+//     let row = "";
+//     for(let j = 1; j < n * 2; j++){
+//         if(j >= px && j <= py){
+//             row += "*";
+//         }else{
+//             row += " ";
+//         }
+//     }
+//     px++;
+//     py--;
+//     console.log(row)
+// // *******
+// //  ***** 
+// //   ***  
+// //    * 
+// }
+
+// second way
+
+// const n = 4;
+// let z = n * 2 - 1;
+
+// for(let i = n; i >= 1; i--){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += "*"
+//     }
+//     z -= 2;
+//     console.log(row)
+// // *******
+// //  ***** 
+// //   ***  
+// //    * 
+// }
+
+// const n = 4;
+// let z = n * 2 - 1;
+
+// for(let i = n; i >= 1; i--){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += i
+//     }
+//     z -= 2;
+//     console.log(row)
+// // 4444444
+// //  33333
+// //   222
+// //    1 
+// }
+
+
+// const n = 4;
+// let z = n * 2 - 1;
+
+// for(let i = n; i >= 1; i--){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += k
+//     }
+//     z -= 2;
+//     console.log(row)
+// // 1234567
+// //  12345
+// //   123
+// //    1
+// }
+
+// const n = 4;
+// let z = n * 2 - 1;
+
+// for(let i = n; i >= 1; i--){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += z
+//     }
+//     z -= 2;
+//     console.log(row)
+// // 7777777
+// //  55555
+// //   333
+// //    1
+// }
+
+
+// const n = 4;
+// let z = n * 2 - 1;
+
+// for(let i = n; i >= 1; i--){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += String.fromCharCode(64+i)
+//     }
+//     z -= 2;
+//     console.log(row)
+// // DDDDDDD
+// //  CCCCC
+// //   BBB
+// //    A
+// }
+
+
+// const n = 4;
+// let z = n * 2 - 1;
+
+// for(let i = n; i >= 1; i--){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += String.fromCharCode(64+k)
+//     }
+//     z -= 2;
+//     console.log(row)
+// // ABCDEFG
+// //  ABCDE
+// //   ABC
+// //    A
+// }
+
+
+// const n = 4;
+// let z = n * 2 - 1;
+
+// for(let i = n; i >= 1; i--){
+//     let row = "";
+//     for(let j = n - 1; j >= i; j--){
+//         row += " ";
+//     }
+//     for(let k = 1; k <= z; k++){
+//         row += String.fromCharCode(64+z)
+//     }
+//     z -= 2;
+//     console.log(row)
+// // GGGGGGG
+// //  EEEEE
+// //   CCC
+// //    A
+// }
+
+
+
+
+
+
 
