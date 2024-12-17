@@ -24,7 +24,6 @@
 //                             // 55555
 // }
 
-
 // const n = 5; // Number of rows and columns
 
 // for (let i = 1; i <= n; i++) {
@@ -410,7 +409,7 @@
 //         //    **
 //         //   ***
 //         //  ****
-//         // *****
+//         // *****  
 // }
 
 
@@ -428,7 +427,7 @@
 //      }
      
 //  console.log(row)
-// //     * 
+// //     *  
 // //    * * 
 // //   * * * 
 // //  * * * * 
@@ -1437,9 +1436,112 @@
 // //    A
 // }
 
+// const n = 3;
+
+// for(let i = n; i >= -n; i--){
+//     let row = "";
+//     for(let j = n; j >= Math.abs(i); j--){
+//         row += "*"
+//     }
+//     console.log(row)
+// // *
+// // **
+// // ***
+// // ****
+// // ***
+// // **
+// // *
+// }
+
+
+// const n = 3;
+
+// for(let i = n; i >= -n; i--){
+//     let row = "";
+//     for(let j = n; j >= Math.abs(i); j--){
+//         row += j
+//     }
+//     console.log(row)
+// // 3
+// // 32
+// // 321
+// // 3210
+// // 321
+// // 32
+// // 3
+// }
+
+
+// const n = 3;
+
+// for(let i = n; i >= -n; i--){
+//     let row = "";
+//     for(let j = n; j >= Math.abs(i); j--){
+//         row += String.fromCharCode(j+65)
+//     }
+//     console.log(row)
+// // D
+// // DC
+// // DCB
+// // DCBA
+// // DCB
+// // DC
+// // D
+// }
+
+// const n = 3;
+
+// for(let i = n; i >= -n; i--){
+//     let row = "";
+//     for(let j = Math.abs(i); j <= n; j++){
+//         row += j
+//     }
+//     console.log(row)
+// // 3
+// // 23
+// // 123
+// // 0123
+// // 123
+// // 23
+// // 3
+// }
+
+// const n = 3;
+
+// for(let i = n; i >= -n; i--){
+//     let row = "";
+//     for(let j = Math.abs(i); j <= n; j++){
+//         row +=String.fromCharCode(j+65)
+//     }
+//     console.log(row)
+// // D
+// // CD
+// // BCD
+// // ABCD
+// // BCD
+// // CD
+// // D
+// } 
 
 
 
+// const n = 3; // Number of rows
 
+// for (let i = 0; i < n; i++) {
+//   let row = "";
 
+//   // Add leading spaces
+//   for (let space = 0; space < i; space++) {
+//     row += " ";
+//   }
 
+//   // Add stars
+//   for (let star = 0; star < 2 * (n - i) - 1; star++) {
+//     row += "*";
+//   }
+
+//   console.log(row);
+// *****
+//  ***
+//   *
+// } 
